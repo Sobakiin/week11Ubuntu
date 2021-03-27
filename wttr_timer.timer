@@ -3,7 +3,7 @@ Description=Run hourly and on boot
 
 [Timer]
 Unit=wttr_reader.service
-OnCalendar=minutely
+OnCalendar=hourly
 Persistent=true
 
 [Install]
