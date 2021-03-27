@@ -1,0 +1,10 @@
+[Unit]
+Description=Run hourly and on boot
+
+[Timer]
+Unit=wttr_reader.service
+OnCalendar=minutely
+Persistent=true
+
+[Install]
+WantedBy=timers.target
